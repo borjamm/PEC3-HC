@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Oscarsclub</title>
+        <meta name="author" content="Borja Machín Morera">
         <meta name="description" content="Página principal de la web Oscarsclub"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -81,11 +82,11 @@
                             </li>
         
                             <li>
-                                <input type="email" placeholder="Correo electrónico" pattern="[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}" title="No es correcto el formato del correo electrónico" required>
+                                <input type="email" placeholder="Correo electrónico" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" title="No es correcto el formato del correo electrónico" required>
                             </li>
         
                             <li>
-                                <input type="password" placeholder="Contraseña" pattern="[A-Za-z'-]{2,64}" title="De 2 a 64 caracteres (Letras, apóstrofes o guiones)" required>
+                                <input type="password" placeholder="Contraseña" pattern="[A-Za-z0-9'-_.$!?#%&*^]{8,}" title="La contraseña debe tener mínimo 8 caracteres" required>
                             </li>
                         </ul>
                         <p class="policy-privacy">
